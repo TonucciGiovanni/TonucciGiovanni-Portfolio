@@ -75,7 +75,7 @@ export function Experience() {
                   <ul className="space-y-2">
                     {exp.bullets.map((bullet, idx) => (
                       <li key={idx} className="text-text-secondary text-sm flex items-start">
-                        <span className="text-accent mr-3 flex-shrink-0">▸</span>
+                        <span className="text-accent mr-3 shrink-0">▸</span>
                         <span>{bullet}</span>
                       </li>
                     ))}
@@ -88,7 +88,7 @@ export function Experience() {
                     <ul className="space-y-1">
                       {exp.achievements.map((achievement, idx) => (
                         <li key={idx} className="text-text-secondary text-sm flex items-start">
-                          <span className="text-accent mr-3 flex-shrink-0">✓</span>
+                          <span className="text-accent mr-3 shrink-0">✓</span>
                           <span>{achievement}</span>
                         </li>
                       ))}

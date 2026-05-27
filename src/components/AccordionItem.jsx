@@ -11,7 +11,7 @@ export function AccordionItem({ title, subtitle, children, isOpen, onClick }) {
             <p className="text-sm text-text-secondary mt-1">{subtitle}</p>
           )}
         </div>
-        <div className="text-accent text-2xl ml-4 flex-shrink-0">
+        <div className="text-accent text-2xl ml-4 shrink-0">
           {isOpen ? '−' : '+'}
         </div>
       </button>

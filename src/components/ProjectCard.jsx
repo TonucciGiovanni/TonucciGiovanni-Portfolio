@@ -8,7 +8,7 @@ function CaseStudySection({ title, items }) {
       <ul className="space-y-2">
         {items.map((item, idx) => (
           <li key={idx} className="text-sm text-text-secondary flex items-start">
-            <span className="text-accent mr-3 flex-shrink-0">▸</span>
+            <span className="text-accent mr-3 shrink-0">▸</span>
             <span>{item}</span>
           </li>
         ))}
@@ -52,7 +52,7 @@ export function ProjectCard({
 
   const caseStudyModal = caseStudyOpen && caseStudy && createPortal(
     <div
-      className="fixed inset-0 z-[60] overflow-y-auto bg-black/85 px-4 py-6 backdrop-blur sm:py-8"
+      className="fixed inset-0 z-60 overflow-y-auto bg-black/85 px-4 py-6 backdrop-blur sm:py-8"
       role="dialog"
       aria-modal="true"
       aria-labelledby="case-study-title"
@@ -75,7 +75,7 @@ export function ProjectCard({
               type="button"
               aria-label="Close case study"
               onClick={() => setCaseStudyOpen(false)}
-              className="h-10 w-10 flex flex-shrink-0 items-center justify-center rounded border border-accent/30 text-accent hover:bg-accent hover:text-dark-bg"
+              className="h-10 w-10 flex shrink-0 items-center justify-center rounded border border-accent/30 text-accent hover:bg-accent hover:text-dark-bg"
             >
               X
             </button>

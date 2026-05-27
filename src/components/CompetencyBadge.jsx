@@ -5,7 +5,7 @@ export function CompetencyBadge({ title, items }) {
       <div className="space-y-2">
         {items.map((item, idx) => (
           <div key={idx} className="text-text-secondary text-sm flex items-start">
-            <span className="text-accent mr-2 flex-shrink-0">•</span>
+            <span className="text-accent mr-2 shrink-0">•</span>
             <span>{item}</span>
           </div>
         ))}
