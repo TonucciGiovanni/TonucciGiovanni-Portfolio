@@ -9,7 +9,6 @@ export function Navigation() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
 
-      // Update active section based on scroll position
       const sections = ['hero', 'about', 'competencies', 'experience', 'projects', 'learning', 'contact']
       for (let section of sections) {
         const element = document.getElementById(section)
@@ -42,7 +41,6 @@ export function Navigation() {
           GT.
         </a>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map(link => (
             <a
@@ -59,7 +57,6 @@ export function Navigation() {
           ))}
         </div>
 
-        {/* Desktop CTA */}
         <a
           href="#contact"
           className="hidden md:inline-block px-6 py-2 bg-accent text-dark-bg font-dm-sans font-semibold rounded-lg hover:bg-accent-dark transition-colors text-sm"
@@ -67,7 +64,6 @@ export function Navigation() {
           Hire Me
         </a>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden flex flex-col gap-1.5 p-2"
@@ -78,8 +74,7 @@ export function Navigation() {
           <span className={`h-0.5 w-6 bg-accent transition-all ${mobileOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
         </button>
       </nav>
-
-      {/* Mobile Menu */}
+      
       {mobileOpen && (
         <div className="md:hidden bg-dark-bg/95 backdrop-blur border-b border-accent/10 px-4 sm:px-6 py-4 space-y-4 animate-slide-down">
           {navLinks.map(link => (

@@ -9,7 +9,7 @@ export function Contact() {
         <h2 className="font-syne text-3xl sm:text-4xl font-semibold mb-12">Get In Touch</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Info */}
+          
           <div>
             <h3 className="font-syne text-xl font-semibold mb-6">Contact Details</h3>
 
@@ -53,8 +53,7 @@ export function Contact() {
               </div>
             </div>
           </div>
-
-          {/* Contact Form */}
+          
           <div>
             <h3 className="font-syne text-xl font-semibold mb-6">Send a Message</h3>
 
